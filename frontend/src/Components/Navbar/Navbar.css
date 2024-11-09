@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: rgb(240, 240, 240);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-image img {
+  width: 250px;
+  padding: 10px;
+}
+
+.menu {
+  margin: 0px;
+  padding-right: 15px;
+  width: 600px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.menu ul {
+  font-family: poppins;
+  font-weight: bold;
+  color: red;
+  font-size: 18px;
+}

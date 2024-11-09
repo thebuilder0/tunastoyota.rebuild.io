@@ -1,0 +1,50 @@
+.title {
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  font-size: 48px;
+  font-weight: 800;
+  color: dodgerblue;
+}
+
+.service-list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.service-list span {
+  font-family: poppins;
+  font-size: 28px;
+  font-weight: 800;
+  color: rgb(255, 69, 69);
+  margin: 0;
+}
+.service-list p {
+  font-family: poppins;
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+}
+.service-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.service-list .left {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin: 0;
+  padding: 0;
+}
+.service-list .right {
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}

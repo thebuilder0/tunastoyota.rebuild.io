@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container-test {
+  margin: 0;
+  gap: 0;
+}
+.judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  font-size: 48px;
+  font-weight: 800;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.gambar-grid {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambar-grid img {
+  width: 20%;
+}
