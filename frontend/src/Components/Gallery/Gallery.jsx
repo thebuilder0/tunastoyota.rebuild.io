@@ -16,11 +16,11 @@ export const Gallery = () => {
 
   return (
     <>
-      {products.map((product) => (
-        <div id="produk" className="container-gallery" key={product.id}>
-          <div className="title">MOBIL PILIHAN KAMI</div>
-          <div className="container-gallery">
-            <div className="gallery-grid">
+      <div className="title">MOBIL PILIHAN KAMI</div>
+      <div className="container-gallery">
+        <div className="gallery-grid">
+          {products.map((product) => (
+            <div id="produk" className="container-content" key={product.id}>
               <div className="card">
                 <img className="image-card" src={product.url}></img>
                 <h1>{product.name}</h1>
@@ -29,37 +29,10 @@ export const Gallery = () => {
                   <button>Add to Cart</button>
                 </p>
               </div>
-              <div className="card">
-                <img className="image-card" src="../public/Car/agyaa.png"></img>
-                <h1>Tailored Jeans</h1>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>
-                  <button>Add to Cart</button>
-                </p>
-              </div>
-              <div className="card">
-                <img className="image-card" src="../public/Car/agyaa.png"></img>
-                <h1>Tailored Jeans</h1>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>
-                  <button>Add to Cart</button>
-                </p>
-              </div>
-              <div className="card">
-                <img className="image-card" src="../public/Car/agyaa.png"></img>
-                <h1>Tailored Jeans</h1>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>AGYA 1.2 E M/T 170.900.000</p>
-                <p>
-                  <button>Add to Cart</button>
-                </p>
-              </div>
             </div>
-          </div>
+          ))}
         </div>
-      ))}
+      </div>
     </>
   );
 };
