@@ -29,6 +29,7 @@ export const saveProduct = (req, res) => {
     return res.status(400).json({ msg: "No File Uploaded" });
   const name = req.body.title;
   const file = req.files.file;
+  const price = req.body.price;
   const fileSize = file.data.length;
   const ext = path.extname(file.name);
   const fileName = file.md5 + ext;
@@ -43,7 +44,12 @@ export const saveProduct = (req, res) => {
   file.mv(`./public/images/${fileName}`, async (err) => {
     if (err) return res.status(500).json({ msg: err.message });
     try {
-      await Product.create({ name: name, image: fileName, url: url });
+      await Product.create({
+        name: name,
+        image: fileName,
+        url: url,
+        price: price,
+      });
       res.status(201).json({ msg: "Product Created Successfuly" });
     } catch (error) {
       console.log(error.message);
@@ -82,11 +88,12 @@ export const updateProduct = async (req, res) => {
     });
   }
   const name = req.body.title;
+  const price = req.body.price;
   const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
 
   try {
     await Product.update(
-      { name: name, image: fileName, url: url },
+      { name: name, image: fileName, url: url, price: price },
       {
         where: {
           id: req.params.id,

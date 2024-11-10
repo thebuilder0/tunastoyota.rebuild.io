@@ -24,37 +24,38 @@ const Admin = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <Link to="/add" className="button is-success">
+    <div className="container">
+      <Link to="/add" className="button">
         Add New
       </Link>
-      <div className="columns is-multiline mt-2">
+      <div className="columns ">
         {products.map((product) => (
-          <div className="column is-one-quarter" key={product.id}>
+          <div className="column" key={product.id}>
             <div className="card">
               <div className="card-image">
-                <figure className="image is-4by3">
+                <figure className="image ">
                   <img src={product.url} alt="Image" />
                 </figure>
               </div>
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title is-4">{product.name}</p>
+                    <p className="title-product">{product.name}</p>
+                    <p className="title-product">{product.price}</p>
                   </div>
                 </div>
               </div>
 
               <footer className="card-footer">
-                <Link to={`edit/${product.id}`} className="card-footer-item">
+                <Link to={`/edit/${product.id}`} className="card-item">
                   Edit
                 </Link>
-                <a
+                <button
                   onClick={() => deleteProduct(product.id)}
-                  className="card-footer-item"
+                  className="card-item"
                 >
                   Delete
-                </a>
+                </button>
               </footer>
             </div>
           </div>
