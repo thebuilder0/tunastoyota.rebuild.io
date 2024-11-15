@@ -21,15 +21,16 @@ export const Irwansyah = () => {
       <div className="right">
         <h2>IRWANSYAH</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          sagittis in nunc eu convallis. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia curae; Sed at metus
-          quis purus lacinia placerat ut sit amet lacus. Pellentesque iaculis
-          non lorem quis feugiat. Duis tristique cursus pretium.
+          Perkenalkan, saya Irwansyah, spesialis mobil Toyota. Dengan pengalaman
+          saya, saya bisa bantu Anda memilih mobil yang paling sesuai dengan
+          kebutuhan. Dari mulai test drive, konsultasi, sampai urusan
+          surat-surat, saya siap membantu.
         </p>
         <button className="call-wa">
           <FaPhoneAlt />
-          <a href="wa.me/">Irwansyah</a>
+          <a href="https://wa.me/+6281514651742?text=Halo, saya Tertarik dengan produk ini">
+            Irwansyah
+          </a>
         </button>
       </div>
     </div>

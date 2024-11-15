@@ -1,6 +1,7 @@
 import "./Gallery.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export const Gallery = () => {
   const [products, setProducts] = useState([]);
@@ -16,7 +17,9 @@ export const Gallery = () => {
 
   return (
     <>
-      <div className="title">MOBIL PILIHAN KAMI</div>
+      <div id="produk" className="title">
+        MOBIL PILIHAN KAMI
+      </div>
       <div className="container-gallery">
         <div className="gallery-grid">
           {products.map((product) => (
@@ -26,12 +29,24 @@ export const Gallery = () => {
                 <h1>{product.name}</h1>
                 <p>{product.price}</p>
                 <p>
-                  <button>Add to Cart</button>
+                  <button className="call-wa">
+                    <FaPhoneAlt />
+                    <a href="https://wa.me/+6281514651742?text=Halo, saya Tertarik dengan produk ini">
+                      Hubungi Kami
+                    </a>
+                  </button>
                 </p>
               </div>
             </div>
           ))}
         </div>
+      </div>
+      <div className="more">
+        <button className="more-button">
+          <a href="https://wa.me/+6281514651742?text=Halo, saya Tertarik dengan produk ini">
+            Lihat Mobil Lainnya
+          </a>
+        </button>
       </div>
     </>
   );

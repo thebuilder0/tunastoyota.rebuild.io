@@ -1,5 +1,4 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -11,9 +10,11 @@ export default function Navbar() {
         <ul>
           <a>Tentang</a>
         </ul>
-        <Link to={"#produk"}>
-          <ul>Daftar Harga</ul>
-        </Link>
+        <ul>
+          <a className="bb" href="#produk">
+            Daftar Harga
+          </a>
+        </ul>
         <ul>Testimoni</ul>
         <ul>Hubungi Kami</ul>
       </div>

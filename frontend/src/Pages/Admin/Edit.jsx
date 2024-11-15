@@ -83,9 +83,6 @@ const Edit = () => {
                 onChange={loadImage}
                 placeholder="Nama Produk"
               />
-              <span className="file-aa">
-                <span className="file-b">Pilih file</span>
-              </span>
             </div>
           </div>
           {preview ? (
@@ -95,8 +92,8 @@ const Edit = () => {
           ) : (
             ""
           )}
-          <div className="field">
-            <button type="submit" className="success">
+          <div className="field-save">
+            <button type="submit" className="save">
               Update
             </button>
           </div>

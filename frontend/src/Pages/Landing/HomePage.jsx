@@ -1,5 +1,6 @@
 import { Bonus } from "../../Components/Bonus/Bonus.jsx";
 import { WhyToyota } from "../../Components/Flip/Flip.jsx";
+import Footer from "../../Components/footer/Footer.jsx";
 import { Gallery } from "../../Components/Gallery/Gallery.jsx";
 import Hero from "../../Components/hero/Hero.jsx";
 import { Irwansyah, Pengalaman } from "../../Components/Irwanysah/Body.jsx";
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Testimoni />
       <Promo />
       <Profil />
+      <Footer />
     </div>
   );
 };

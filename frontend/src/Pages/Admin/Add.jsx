@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./Add.css";
 
 const Add = () => {
   const [title, setTitle] = useState("");
@@ -68,11 +69,8 @@ const Add = () => {
                 type="file"
                 className="file-upload"
                 onChange={loadImage}
-                placeholder="Nama Produk"
+                placeholder="image"
               />
-              <span className="file-aa">
-                <span className="file-b">Pilih file</span>
-              </span>
             </div>
           </div>
           {preview ? (
@@ -82,8 +80,8 @@ const Add = () => {
           ) : (
             ""
           )}
-          <div className="field">
-            <button type="submit" className="success">
+          <div className="field-save">
+            <button type="submit" className="save">
               Save
             </button>
           </div>

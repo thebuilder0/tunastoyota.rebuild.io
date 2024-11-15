@@ -7,9 +7,9 @@ export const Stat = () => {
       <div className="list-stat">
         <div className="stat">
           <div
-            className="icon"
+            className="icon-stat"
             style={{
-              fontSize: "64px",
+              fontSize: "72px",
               backgroundColor: "transparent",
               color: "black",
             }}
@@ -23,7 +23,7 @@ export const Stat = () => {
         </div>
         <div className="stat">
           <div
-            className="icon"
+            className="icon-stat"
             style={{
               fontSize: "64px",
               backgroundColor: "transparent",
@@ -39,7 +39,7 @@ export const Stat = () => {
         </div>
         <div className="stat">
           <div
-            className="icon"
+            className="icon-stat"
             style={{
               fontSize: "64px",
               backgroundColor: "transparent",
