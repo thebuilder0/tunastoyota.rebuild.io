@@ -1,0 +1,83 @@
+.container-footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(24, 68, 156);
+  width: auto;
+  padding: 0px 30px;
+}
+
+.footer-top {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 40%;
+}
+
+.left-footer img {
+  width: 350px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  border: non;
+}
+
+.left-footer .alamat {
+  margin-top: 10px;
+  font-family: poppins;
+  font-size: 18px;
+  color: white;
+  line-height: 20px;
+}
+
+.center-footer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.center-footer .peta {
+  border: none;
+}
+.right-footer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.right-footer button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.right-footer .sosmed:hover {
+  color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px;
+}
