@@ -2,7 +2,7 @@ import "./Testimoni.css";
 
 export const Testimoni = () => {
   return (
-    <div className="container-test">
+    <div id="testimoni" className="container-test">
       <div className="judul">
         <span>TESTIMONI</span>
       </div>

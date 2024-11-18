@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 
 export const Profil = () => {
   return (
-    <div className="container-profil">
+    <div id="tentang" className="container-profil">
       <div className="container-logo">
         <img className="logo-profil" src="../public/Assets/logo.png"></img>
       </div>

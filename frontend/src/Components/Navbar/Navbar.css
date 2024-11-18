@@ -24,20 +24,19 @@ body {
 .menu {
   margin: 0px;
   padding-right: 15px;
-  width: 600px;
+  width: 650px;
   display: flex;
   justify-content: end;
   align-items: center;
-  column-gap: 5px;
 }
 
-.menu ul {
-  font-family: poppins;
-  font-weight: bold;
+.zz {
+  display: flex;
   color: red;
-
-  font-size: 18px;
-}
-.bb {
+  font-family: poppins;
+  font-weight: 800;
+  font-size: 20px;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }

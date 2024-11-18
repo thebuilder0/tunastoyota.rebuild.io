@@ -14,7 +14,7 @@ export const Pengalaman = () => {
 
 export const Irwansyah = () => {
   return (
-    <div className="irwansyah">
+    <div id="hubungi" className="irwansyah">
       <div className="left">
         <img className="ir-image" src="../public/Assets/irwansyah.jpg" />
       </div>

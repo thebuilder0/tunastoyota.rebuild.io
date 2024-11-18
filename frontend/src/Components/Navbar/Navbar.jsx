@@ -8,15 +8,25 @@ export default function Navbar() {
       </div>
       <div className="menu">
         <ul>
-          <a>Tentang</a>
+          <a className="zz" href="#tentang">
+            Tentang
+          </a>
         </ul>
         <ul>
-          <a className="bb" href="#produk">
+          <a className="zz" href="#produk">
             Daftar Harga
           </a>
         </ul>
-        <ul>Testimoni</ul>
-        <ul>Hubungi Kami</ul>
+        <ul>
+          <a className="zz" href="#testimoni">
+            Testimoni
+          </a>
+        </ul>
+        <ul>
+          <a className="zz" href="#hubungi">
+            Hubungi Kami
+          </a>
+        </ul>
       </div>
     </div>
   );
